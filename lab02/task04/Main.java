@@ -12,8 +12,7 @@ class Book {
     }
 
     public String toString() {
-        // TODO
-        return null;
+        return title + ", written by " + author + ", published in " + year;
     }
 }
 
@@ -26,5 +25,7 @@ public class Main {
         
         Book book = new Book(title, author, year);
         System.out.println(book);
+
+        scanner.close();
     }
 }

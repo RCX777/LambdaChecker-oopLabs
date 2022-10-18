@@ -3,19 +3,16 @@ import java.util.Scanner;
 class Point {
     private float x, y;
 
-    // TODO: Add constructor.
     public Point(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
-    // TODO: Add changeCoords.
     public void changeCoords(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
-    // TODO: Add showPoint.
     public void showPoint() {
         Float x = this.x;
         Float y = this.y;
@@ -26,7 +23,6 @@ class Point {
 class Polygon {
     private Point[] points;
 
-    // TODO: Add constructors.
     public Polygon(int n) {
         points = new Point[n];
 
@@ -42,7 +38,7 @@ class Polygon {
             points[i/2] = new Point(i, i + 1);
         }
     }
-    // TODO: Add showPolygon.
+
     public void showPolygon() {
         for (int i = 0; i < points.length; i++) {
             points[i].showPoint();
@@ -59,7 +55,6 @@ public class Main {
         float x2 = scanner.nextFloat();
         float y2 = scanner.nextFloat();
 
-        // TODO: Uncomment the code after implementing the task.
         Point point = new Point(x1, y1);
         point.showPoint();
 
@@ -77,5 +72,6 @@ public class Main {
         System.out.println("Poligonul are urmatoarele coordonate:");
         polygon.showPolygon();
 
+        scanner.close();
     }
 }

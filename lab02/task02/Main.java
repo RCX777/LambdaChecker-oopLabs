@@ -78,5 +78,7 @@ public class Main {
             Student ID: 42
         */
         student2.show();
+
+        scanner.close();
     }
 }

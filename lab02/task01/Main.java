@@ -4,7 +4,6 @@ class Complex {
     private int real      = 0;
     private int imaginary = 0;
 
-    // TODO: Add constructors
     public Complex(int real, int imaginary) {
         this.real      = real;
         this.imaginary = imaginary;
@@ -17,7 +16,6 @@ class Complex {
         this.imaginary = number.imaginary;
     }
 
-    // TODO: Add getters and setters
     public int getReal() {
         return real;
     }
@@ -34,13 +32,11 @@ class Complex {
         this.imaginary = imaginary;
     }
 
-    // TODO: Add addWithComplex
     public void addWithComplex(Complex numberToAdd) {
         real      += numberToAdd.real;
         imaginary += numberToAdd.imaginary;
     }
 
-    // TODO: Add showNumber
     public void showNumber() {
         Integer real      = this.real;
         Integer imaginary = this.imaginary;
@@ -62,8 +58,6 @@ public class Main {
 
         int real      = scanner.nextInt();
         int imaginary = scanner.nextInt();
-
-        // TODO: Uncomment the code after implementing the task.
 
         System.out.println("Constructors test:\n");
 
@@ -90,5 +84,7 @@ public class Main {
         c3.setReal(6);
         c3.setImaginary(-4);
         System.out.println(c3.getReal() + " " + c3.getImaginary());
+
+        scanner.close();
     }
 }
